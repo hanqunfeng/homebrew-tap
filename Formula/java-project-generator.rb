@@ -5,7 +5,6 @@ class JavaProjectGenerator < Formula
   sha256 "ae1cc9e0c60a73e3ea21b3cac5fd88179965260bd8af324afac3faddbd6ce02e"
   license "MIT"
 
-
   depends_on "glow"
   depends_on "pandoc"
 
