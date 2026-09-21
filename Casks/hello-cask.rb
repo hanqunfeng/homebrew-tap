@@ -6,15 +6,10 @@ cask "hello-cask" do
 
   url "https://github.com/hanqunfeng/hello_cask/releases/download/v#{version}/HelloCask-#{version}.zip"
   name "HelloCask"
-  desc "A tiny demo macOS app for learning Homebrew Casks"
+  desc "Tiny demo app for learning Homebrew Casks"
   homepage "https://github.com/hanqunfeng/hello_cask"
 
+  depends_on :macos
 
   app "HelloCask.app"
-
-  # Documentation: https://docs.brew.sh/Cask-Cookbook#stanza-zap
-  # 可选：brew uninstall --zap 时清理偏好设置等残留
-  zap trash: [
-    "~/Library/Saved Application State/com.apple.ScriptEditor.id.HelloCask.savedState",
-  ]
 end
