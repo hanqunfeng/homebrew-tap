@@ -3,10 +3,9 @@
 class BrewPublishFormula < Formula
   desc "Install brew-publish-formula"
   homepage "https://github.com/hanqunfeng/brew-publish-formula"
-  # version 必须写在 url 前面，#{version} 才会被替换。
-  version "0.1.3"
-  url "https://github.com/hanqunfeng/brew-publish-formula/archive/refs/tags/v#{version}.tar.gz"
-  sha256 "6f43025089cb9ddb1e2d9eb02c8b10810559202148823a9ca1c328b30c176ba9"
+  url "https://github.com/hanqunfeng/brew-publish-formula/archive/refs/tags/v0.1.4.tar.gz"
+  version "0.1.4"
+  sha256 "eb3bf3588b6c0d040d168fb1be60919e544519b69fde05d340c47aac64a7e304"
   license "MIT"
 
   def install
