@@ -4,8 +4,8 @@
 class NpmPublishOidc < Formula
   desc "Publish npm packages with GitHub Actions OIDC"
   homepage "https://github.com/hanqunfeng/npm-publish-oidc"
-  url "https://github.com/hanqunfeng/npm-publish-oidc/archive/refs/tags/v0.1.4.tar.gz"
-  sha256 "96b8f7d523d898f5df98d8a41428c9914f89b6cdc878270129f01950bf7c9726"
+  url "https://github.com/hanqunfeng/npm-publish-oidc/archive/refs/tags/v1.0.0.tar.gz"
+  sha256 "e22ac6cf47293f305ffd8b1f7f3a2459451571b1b2df33f59464ad2d204a1e48"
   license "MIT"
 
   def install
@@ -27,7 +27,7 @@ class NpmPublishOidc < Formula
   end
 
   test do
-    assert_match "用法", shell_output("#{bin}/npm-publish-oidc --help")
+    assert_match "Usage", shell_output("#{bin}/npm-publish-oidc --help")
     assert_path_exists libexec/"publish.yml.tmpl"
   end
 end
