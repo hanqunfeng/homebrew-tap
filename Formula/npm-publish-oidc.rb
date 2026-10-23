@@ -4,8 +4,8 @@
 class NpmPublishOidc < Formula
   desc "Publish npm packages with GitHub Actions OIDC"
   homepage "https://github.com/hanqunfeng/npm-publish-oidc"
-  url "https://github.com/hanqunfeng/npm-publish-oidc/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "e22ac6cf47293f305ffd8b1f7f3a2459451571b1b2df33f59464ad2d204a1e48"
+  url "https://github.com/hanqunfeng/npm-publish-oidc/archive/refs/tags/v1.0.1.tar.gz"
+  sha256 "4d1aef4c21a6b50a48b87ecc881855f343f94134164e16517836d76d1b3dd744"
   license "MIT"
 
   def install
