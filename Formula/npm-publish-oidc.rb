@@ -4,11 +4,9 @@
 class NpmPublishOidc < Formula
   desc "Publish npm packages with GitHub Actions OIDC"
   homepage "https://github.com/hanqunfeng/npm-publish-oidc"
-  url "https://github.com/hanqunfeng/npm-publish-oidc/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "fa6945a25904508fb947afb8993cb5fd3ebfd63e2f9ac5d049a0257c7f4d6e08"
+  url "https://github.com/hanqunfeng/npm-publish-oidc/archive/refs/tags/v0.1.2.tar.gz"
+  sha256 "5736ca43bda9f6c295b716b5ff3e40c107be869db1c1b48a0d15686a46589e8f"
   license "MIT"
-
-  depends_on "node"
 
   def install
     libexec.install "npm-publish-oidc", "publish.yml.tmpl"
@@ -18,6 +16,9 @@ class NpmPublishOidc < Formula
 
   def caveats
     <<~EOS
+      Node.js and npm are required and are not installed by this formula.
+      Install them yourself and make sure both are on PATH.
+
       GitHub CLI is required to publish and watch Actions:
         brew install gh
         gh auth login
