@@ -1,8 +1,8 @@
 class JavaProjectGenerator < Formula
   desc "Generate Spring Boot projects quickly with shell scripts"
   homepage "https://github.com/hanqunfeng/java-project-generator"
-  url "https://github.com/hanqunfeng/java-project-generator/archive/refs/tags/v1.0.10.tar.gz"
-  sha256 "5480e251ac6656f7ba6fc394b81740c36dc33939fb1c4426a8225f3cac0ec21b"
+  url "https://github.com/hanqunfeng/java-project-generator/archive/refs/tags/v1.0.11.tar.gz"
+  sha256 "407afffa23f71756354592514c4ae6a74136635f714cfaf174df3f4f3b138de8"
   license "MIT"
 
   depends_on "glow"
